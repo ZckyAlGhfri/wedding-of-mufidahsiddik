@@ -391,10 +391,10 @@
   </script>
   <script>
     const rootElement = document.querySelector(":root");
-    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
-    const song = document.querySelector('#song');
-    const audioIcon = document.querySelector('.audio-icon-wrapper i')
-    let isPlaying = false;
+    //const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    //const song = document.querySelector('#song');
+    //const audioIcon = document.querySelector('.audio-icon-wrapper i')
+    //let isPlaying = false;
     
     function disableScroll(){
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -410,30 +410,30 @@
     function enableScroll(){
       window.onscroll = function(){ }
       rootElement.style.scrollBehavior = 'smooth';
-      playAudio();
+      //playAudio();
     }
 
-    function playAudio(){
-      const song = document.querySelector('#song');
-      song.volume = 0.7;
-      audioIconWrapper.style.display = 'flex';
-      song.play();
-      isPlaying = true;
-    }
+    //function playAudio(){
+      //const song = document.querySelector('#song');
+      //song.volume = 0.7;
+      //audioIconWrapper.style.display = 'flex';
+      //song.play();
+      //isPlaying = true;
+    //}
 
-    audioIconWrapper.onclick = function() {
-      if (isPlaying) {
+    //audioIconWrapper.onclick = function() {
+      //if (isPlaying) {
         song.pause();
-        audioIcon.classList.remove('bi-disc');
-        audioIcon.classList.add('bi-pause-circle');
-      } else {
-        song.play();
-        audioIcon.classList.add('bi-disc');
-        audioIcon.classList.remove('bi-pause-circle');
-      }
+        //audioIcon.classList.remove('bi-disc');
+        //audioIcon.classList.add('bi-pause-circle');
+      //} else {
+        //song.play();
+        //audioIcon.classList.add('bi-disc');
+        //audioIcon.classList.remove('bi-pause-circle');
+      //}
 
-      isPlaying = !isPlaying;
-    }
+      //isPlaying = !isPlaying;
+    //}
 
     disableScroll();
   </script>
