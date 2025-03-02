@@ -35,7 +35,7 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Cookie', cursive;
     font-size: 6rem;
 }
 
@@ -84,11 +84,14 @@ body {
     margin-top: -6rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .home h2 {
     color: var(--pink);
-    font-family: 'Sacramento';
+    font-family: 'Sacramento', cursive;
     font-size: 5rem;
     font-weight: bold;
 }
@@ -105,34 +108,22 @@ body {
 }
 
 .home .couple {
-    margin-top: 100px;
+    margin-top: 15px;
 }
 
 .home .couple h3 {
-    font-family: 'Sacramento';
-    font-size: 2.4rem;
+    font-family: 'Cookie';
+    font-size: 3.2rem;
     color: var(--pink);
 }
 
 .home .couple img {
-    width: 100%;
+    width: 25%;
 }
 
-.home .heart {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    display: flex;
-    border-radius: 50%;
-    box-shadow: var(--shadow);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(65px);
-}
-
-.home .heart i {
-    margin: auto;
-    color: var(--pink);
+.home h4 {
+    z-index: 1;
+    font-weight: bold;
 }
 
 .info {
@@ -192,7 +183,6 @@ body {
 
 .story {
     padding-top: 10rem;
-    padding-bottom: 8rem;
 }
 
 .story span {
@@ -242,7 +232,7 @@ body {
 .timeline li .timeline-image {
     width: 160px;
     height: 160px;
-    background-color: #ccc;
+    background-color: #d6d6d6;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -305,6 +295,7 @@ body {
 }
 
 .content-box {
+    margin-top: auto;
     background-color: white;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -313,10 +304,10 @@ body {
 }
 .text-arabic {
     font-size: 1.25rem;
-    color: #333;
+    color: #000;
 }
 .text-translation {
-    color: #555;
+    color: #111;
 }
 .decorative-img {
     width: 6rem;
@@ -327,8 +318,6 @@ body {
     background-image: url(img/floral.png);
     background-size: cover;
     min-height: 100vh;
-    margin-top: -6rem;
-    padding-top: 10rem;
     padding-bottom: 5rem;
 }
 
@@ -350,36 +339,6 @@ body {
     color: #666;
 }
 
-.pray .couple {
-    margin-top: 100px;
-}
-
-.pray .couple h3 {
-    font-family: 'Sacramento';
-    font-size: 2.4rem;
-    color: var(--pink);
-}
-
-.pray .couple img {
-    width: 100%;
-}
-
-.pray .heart {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    display: flex;
-    border-radius: 50%;
-    box-shadow: var(--shadow);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(65px);
-}
-
-.pray .heart i {
-    margin: auto;
-    color: var(--pink);
-}
 
 .rsvp h2 {
     color: var(--pink);
@@ -492,9 +451,9 @@ footer li {
     html{
         font-size: 75%;
     }
-    .home .heart {
+    /* .home .heart {
         display: none;
-    }
+    } */
 
     .timeline::before {
         left: 60px;
